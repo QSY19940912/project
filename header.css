@@ -1,0 +1,479 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+header{
+    background:#fff;
+    font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+    user-select: none;
+    font-size: 14px;
+    color:#878787;
+    margin-top: 15px;
+    position: relative;
+}
+header::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+/*导航栏字体设置*/
+header>div.index-menu{
+    width: 1140px;
+    margin: 0 auto;
+}
+header  div ul{
+    list-style: none;
+    margin: 5px auto;
+}
+.nav_ul,.nav_ul_1{
+    float: left;
+}
+.nav_ul:after,.nav_ul_1:after{
+    display: block;
+    content: "";
+    clear:both;
+}
+.nav_ul li,.nav_ul_1 li{
+    float: left;
+    cursor: pointer;
+    padding-bottom: 5px;
+}
+.nav_ul_1 li:first-child img {
+    width: 78px;
+    height: 55px;
+}
+.nav_ul_1 li:nth-child(2){
+    background:url("../img/earth.png");
+    width:83px;
+    height:24px;
+    line-height: 24px;
+    margin-top:17px;
+    margin-left:52px;
+    color: #fff;
+}
+.nav_ul_1 li:nth-child(2) span{
+    color: #fff;
+    margin-left:35px;
+}
+.nav_ul li a,.nav_ul_1 li a{
+    display: inline-block;
+    margin-left:35px;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 55px;
+}
+.nav_ul li a:hover,.nav_ul_1 li a:hover{
+    color:#26cad3;
+}
+.input_span{
+    float: left;
+    width: 256px;
+    position: relative;
+    margin-left: 20px;
+    margin-top: 16px;
+}
+.input_span img{
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    top: 5px;
+    left: 6px;
+}
+.head_search_input{
+    width: 189px;
+    height: 29px;
+    font-size: 14px;
+    padding: 0 30px;
+    border: 1px solid #ddd;
+}
+.search_btn{
+    width: 64px;
+    height: 28px;
+    font-size: 16px;
+    color: #fff;
+    background: #26cad3;
+    position: absolute;
+    line-height: 30px;
+    text-align: center;
+}
+.session_login{ 
+    font-size: 16px;
+}
+.session_login>a{
+    text-decoration: none;
+    color: #01d5d8;
+    float: right;
+    margin-top: -27px;
+    margin-right: -79px;
+}
+.session_login a:last-child{
+    margin-right: -123px;
+}
+.button-sy-hy{
+    background:url(../img/personal_1.png) no-repeat center center;
+    float: right;
+    margin-top: 8px;
+    margin-right :40px;
+    width: 38px;
+    height: 38px;
+    background-size: 37px 37px;
+}
+
+/*登录页面设置*/
+.hidden{
+    display: none;
+}
+/*
+.login_bg{
+    position: absolute;
+    background: rgb(0,0,0);
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    opacity: 0.6;
+    height: 4037px;
+    display: none;
+}*/
+#my_login_main{
+    position: fixed;
+    top:50px;
+    left:700px;
+    max-width: 560px;
+    min-height: 500px;
+    height: auto;
+    border: 2px solid #01d5d8;
+    border-radius: 5px;
+    margin: 0 auto;
+    z-index: 100;
+    background: #fff;
+}
+#my_login_main>.login-close{
+    position: absolute;
+    left: 18px;
+    top:20px;
+    cursor: pointer;
+}
+.login-first{
+    width: 123px;
+    height: 123px;
+    position: absolute;
+    top:0;
+    left: 433px;
+}
+.login-title{
+    margin-top: 60px;
+    position: relative;
+    text-align: center;
+    min-width: 556px;
+}
+.login-title>span:first-child{
+    position: absolute;
+    width: 70px;
+    height: 1px;
+    margin-top: 14px;
+    margin-right: 25px;
+    margin-left: -150px;
+    border: 1px solid #a8a8a8;
+}
+.login-title>h4{
+    color: #333333;
+}
+.login-title>span:last-child{
+    position: absolute;
+    width: 70px;
+    height: 1px;
+    margin-top: -22px;
+    right: 125px;
+    border: 1px solid #a8a8a8;
+}
+.title-phone{
+    margin-top: 35px;
+    height: 40px;
+    margin-left: 38px;
+}
+.title-phone>img{
+    float: left;
+    padding-top: 10px;
+    margin-left: 68px;
+}
+.input_one,.input_two{
+    width: 246px;
+    height: 40px;
+    float: left;
+    margin-left: 40px;
+}
+.input_myphone,.input_mypwd{
+    border: 1px solid #a8a8a8;
+    padding: 8px;
+    width: 245px;
+    border-radius: 5px;
+    float: left;
+}
+.title-pwd{
+    float: left;
+    margin-top: 30px;
+    margin-left: 38px;
+}
+.title-pwd>img{
+    margin-left: 68px;
+    padding-top: 10px;
+    float: left;
+}
+.input_mypwd_img{
+    background: url(../img/icon_lamp_off.png)no-repeat;
+    float: left;
+    width: 16px;
+    height: 16px;
+    background-position: 0 0;
+    margin-left: 216px;
+    margin-top: -26px;
+}
+/*登录按钮*/
+.login-button{
+    margin-top: 120px;
+    text-align: center;
+}
+.login-button>button{
+    background: #01d5d8;
+    width: 270px;
+    height: 40px;
+    margin-right:-20px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+}
+.title-next{
+    margin-bottom: 10px;
+    height: 20px;
+}
+.title-next>img{
+    float: left;
+    margin-left: 92px;
+    margin-top: -1px;
+    padding: 5px;
+}
+.title-w{
+    margin-top: 33px;
+    font-size: 13px;
+    color:#000 ;
+}
+.title_a{
+    margin: 25px auto;
+    text-align: center;
+}
+.title-next a{
+    color: #01d5d8;
+    margin: 30px;
+    font-weight: bold;
+    text-decoration: none;
+}
+/*注册*/
+.ordinary-login{
+   position: fixed;
+    top:30px;
+    left:700px;
+    width: 600px;
+    min-height: 569px;
+    height: auto;
+    border: 2px solid #01d5d8;
+    border-radius: 5px;
+    margin: 20px auto 0; 
+    z-index: 100;
+    background: #fff;
+}
+.login-close{
+    position: absolute;
+    left: 18px;
+    top: 20px;
+    width:16px;
+    height: 16px;
+    cursor: pointer;
+}
+.ordinary-login .first{
+    height: 90px;
+}
+.ordinary-login .left{
+    float: left;
+    width: 100%;
+}
+.ordinary-login .lower{
+    float: left;
+    margin-top: 46px;
+}
+.login-title1,.login-title3{
+    float: left;
+    width: 70px;
+    height: 1px;
+    margin-top: 14px;
+    margin-right: 25px;
+    margin-left: 140px;
+    border: 1px solid #878787;
+}
+.login-title2{
+    float: left;
+    font-size: 24px;
+}
+.login-title3{
+    margin-left: 25px;
+}
+.second{
+    height: 40px;
+    margin-top: 33px;
+}
+.second .phone_img{
+    height: 40px;
+    line-height: 50px;
+    border-radius: 5px 0 0 5px;
+    float: left;
+    margin-left: 83px;
+    margin-right: 24px;
+    text-align: center;
+}
+.second .phone_input{
+    float: left;
+    width: 286px;
+    height: 38px;
+    line-height: 40px;
+    font-size: 14px;
+    padding-left: 20px;
+    border-radius: 5px;
+}
+.phone_input input{
+    border:1px solid #3333;
+    width: 305px;
+    height: 42px;
+    border-radius: 5px;
+    padding: 15px;
+}
+/*删除按钮x*/
+.input_close{
+    float: left;
+    width: 12px;
+    height: 12px;
+    padding: 20px;
+    cursor: pointer;
+    background: url(../img/error.png) no-repeat;
+    background-position: 50% 50%;
+}
+.title_hide1{
+    clear: both;
+    font-size: 12px;
+    color: red;
+    height: 16px;
+    margin: 9px 0 9px 148px;
+    line-height: 16px;
+}
+.third{height: 40px;}
+.upper{
+    text-align: center;
+    line-height: 50px;
+    float: left;
+    margin-left: 84px;
+    margin-right: 24px;
+    border-radius: 5px;
+}
+.input_upwd{
+    float: left;
+    width: 286px;
+    height: 38px;
+    line-height: 40px;
+    font-size: 14px;
+    padding-left: 20px;
+    border-radius: 5px;
+}
+.input_upwd>input{
+    border-radius: 5px;
+    border: 1px solid #3333;
+    width: 305px;
+    height: 42px;
+    padding: 15px;
+}
+.upwd_img{
+    position: relative;
+    float: left;
+    cursor: pointer;
+    padding: 20px;
+    width: 12px;
+    height: 12px;
+    background: url(../img/icon_lamp_off.png) no-repeat;
+    background-position: 50% 50%;  
+    margin-top: -37px;
+    margin-left:263px; 
+}
+.title_hide3{
+    color: red;
+    clear: both;
+    font-size: 12px;
+    height: 16px;
+    margin: 9px 0 9px 148px;
+    line-height: 16px;
+}
+/*注册按钮*/
+.sixth{
+    margin-top: 14px;
+    margin-left: 126px;
+}
+.sixth>button{
+    background: #01d5d8;
+    width: 305px;
+    height: 43px;
+    margin-top: 55px;
+    margin-left: 20px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+}
+.sixth_next{
+    height: 21px;
+    margin-top: 30px;
+    margin-bottom: 11px;
+}
+.sixth_next>img{
+    float: left;
+    margin-left: 154px;
+    margin-right: 8px;
+}
+.sixth_next_title{
+    font-size: 12px;
+    float: left;
+    line-height: 13px;
+}
+.sixth_login{
+    font-size: 14px;  
+    width: 60px;
+    text-align: center;
+    margin: 0 auto;    
+}
+.sixth_login>a{
+    color:#01d5d8;
+    text-decoration: none;   
+}
+/*导航栏效果内容*/
+.nav_li{
+    width: 1109px;
+    background: #fff;
+    position:absolute;
+    font-size: 16px;
+    color: #000000;
+    text-align: center;
+    left: 18px;
+    top:57px;
+    z-index: 100;
+}
+.nav_li>ul>li{
+    list-style: none;
+    float: left;
+    border:1px solid #a8a8a8;
+}
+.nav_li>ul>li img{
+    width: 235px;
+    height: 135px;
+    margin: 20px;
+}
+.nav_li>ul>li p:last-child{
+    color: red;
+}
