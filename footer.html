@@ -1,0 +1,40 @@
+
+    <div id="#my_footer">
+        <div class="foot">
+            <div class="foot_main">
+                <div class="foot_list">
+                    <a href="#">代金卡章程</a>
+                    <a href="#">购物指南</a>
+                    <a href="#">服务条款</a>
+                    <a href="#">配送方式</a>
+                    <a href="#">联系我们</a>
+                    <a href="#">品牌故事</a>
+                    <a href="#">网站地图</a>
+                </div>
+                <div class="foot_title">贝思客</div>
+                <div class="foot_phone">21点前下单支持明天开始配送，21点后下单支持后天开始配送</div>
+                <div class="foot_phone1">客服电话：400-627-5757 021-26079350&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  工作时间（9：00-21：00）</div>
+                <div class="foot_q">旗下品牌</div>
+                <div class="foot_name">上海手乐电子商务股份有限公司</div>
+                <div class="foot_info">Copyright © 2010-2018 bestcake.com 版权所有　沪ICP备11046518</div>
+                <div id="img1" class="img_div"></div>
+                <div id="img2" class="img_div"></div>
+                <img id="img_1" class="img_img" src="img/weixin_ewm.png" alt="微信"/>
+                <img id="img_2" class="img_img" src="img/app_ewm.png" alt="APP"/>
+            </div>
+        </div>
+    </div>
+<script src="js/jquery-1.11.3.js"></script>
+<script>
+    $('.img_div').hover(
+            function() {
+                if($(this).attr('id')=='img1') {
+                    $('#img_1').show()
+                } else {
+                    $('#img_2').show()
+                }
+            },
+            function () {
+                $('.img_img').hide()
+            })
+</script>
