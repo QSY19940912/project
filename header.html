@@ -1,0 +1,213 @@
+<header>
+    <div class="index-menu">
+        <!--导航栏-->
+        <div style="position: relative">
+            <ul class="nav_ul_1">
+                <li><a href="#"><img src="img/logo.png" title="返回首页"/></a></li>
+                <li><span>北京</span></li>
+                <li><a href="http://localhost:3000/index.html" class="my_font">首页</a></li>
+            </ul>
+            <div>
+                <ul class="nav_ul">
+                    <li><a href="#" class="title">下午茶</a></li>
+                    <li><a href="#" class="title">送亲子</a></li>
+                    <li><a href="#" class="title">送长辈</a></li>
+                    <li><a href="#" class="title">送闺蜜</a></li>
+                    <li><a href="#" class="title">送恋人</a></li>
+                    
+                </ul>
+
+                <!--导航栏效果内容-->
+                <div class="nav_li">
+                    <ul>
+                        <li>
+                            <a href="http://localhost:3000/details.html?lid=1">
+                               <img src="img/旺旺旺1.png" />
+                            </a>
+                            <p>旺旺旺</p>
+                            <p>￥198.00</p>
+                        </li>
+                        <li>
+                            <a href="http://localhost:3000/details.html?lid=2">
+                                <img src="img/星光游乐园1.png"/>
+                            </a>
+                            <p>星光游乐园</p>
+                            <p>￥218.00</p>
+                        </li>
+                        <li>
+                            <a href="http://localhost:3000/details.html?lid=3">
+                                <img src="img/草莓拿破仑1.png"/>
+                            </a>
+                            <p>草莓拿破仑</p>
+                            <p>￥198.00</p>
+                        </li>
+                        <li>
+                            <a href="http://localhost:3000/details.html?lid=4">
+                                <img src="img/马卡龙の吻1.png"/>
+                            </a>
+                            <p>马卡龙の吻</p>
+                            <p>￥218.00</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="input_span">
+                <img src="img/search.png" alt="搜索"/>
+                <input class="head_search_input" type="text" placeholder="请输入要查找的内容"/>
+                <span class="search_btn">搜索</span>
+                <div class="session_login">
+                    <a href="#" style="display:none" id="welcome"><a>      
+                    <a href="#" style="display:none" id="logout" onclick="logout1()">退出</a>
+                </div>
+            </div>
+            <div class="button-sy-hy" id="sy"></div>
+        </div>
+    </div>
+
+    <!--登录页面-->
+    <div id="my_login_main" class="hidden"> 
+        <form id="form-login">
+            <div class="login-close">
+                <img src="img/login-close.png"/>
+            </div>
+            <div class="login-first">
+                <img src="img/quick.png"/>
+            </div>
+            <!--普通登录-->
+            <div class="login-title">
+                <span>&nbsp;</span>
+                <h4>普通登录</h4>
+                <span>&nbsp;</span>
+            </div>
+            <div class="title-phone">
+                <img src="img/iphone.png"/>
+                <div class="input_one">
+                    <input class="input_myphone" type="text" placeholder="手机号码" maxlength="20" name="phone" id="input_myphone"/>
+                    <span id="phone1"></span>
+                </div>
+            </div>
+            <div class="title-pwd">
+                <img src="img/password.png"/>
+                <div class="input_two">
+                    <input class="input_mypwd" type="text" placeholder="密码" id="input_mypwd"/>
+                    <div class="input_mypwd_img"></div>
+                    <span id="upwd1"></span>
+                    
+                </div>
+            </div>
+            <!--登录-->
+            <div class="login-button">
+                <button id="bt-login" onclick="postMsg()">登录</button>
+            </div>
+            <div class="title-next">
+                <img src="img/tick.png"/>
+                <div class="title-w">我阅读并同意《会员注册协议》和《隐私保护政策》</div>
+                <div class="title_a">
+                    <a href="#">忘记密码</a>
+                    <a href="#" id="ordinary">注册账号</a>
+                </div>
+            </div>
+        </form>
+    </div>
+        <!--注册页面-->
+    <div class="ordinary-login">
+        <form>
+            <div class="login-close">
+                <img src="img/login-close.png">
+            </div>
+            <div class="first">
+                <div class="left">
+                    <div class="lower">
+                        <div class="login-title1">&nbsp;</div>
+                        <div class="login-title2">普通登录</div>
+                        <div class="login-title3">&nbsp;</div>
+                    </div>
+                </div>
+            </div>
+            <div class="second">
+                <div class="phone_img">
+                    <img src="img/iphone.png">
+                </div>
+                <div class="phone_input">
+                    <input type="text" maxlength="11" autocomplete="off" placeholder="手机号码" id="phone_1">
+                </div>
+                <div class="input_close">
+                    <!--删除按钮x-->
+                    <div class="phone_close"></div>
+                </div>
+            </div>
+            <div class="title_hide1"></div>
+            <div class="third">
+                <div class="upper">
+                    <img src="img/password.png" alt="">
+                </div>
+                <div class="input_upwd">
+                    <input type="password" placeholder="密码 需6位以上数字或字母" id="upwd_1">
+                    <div class="upwd_img"></div>
+                </div>
+                <div class="title_hide3"></div>
+                <div class="upper">
+                     <img src="img/password-2.png">
+                </div>
+                <div class="input_upwd">
+                    <input type="password" placeholder="确认密码">
+                </div>
+                <div class="title_hide3"></div>
+            </div>
+        </form>
+           
+        <!--注册按钮-->
+        <div class="sixth">
+           <button onclick="postSuc()">注册</button>
+        </div>
+        <div class="sixth_next">
+            <img src="img/tick.png">
+            <div class="sixth_next_title">我阅读并同意《会员注册协议》和《隐私保护政策》</div>
+        </div>
+        <div class="sixth_login">
+            <a href="#" id="sixth_login1">登录</a>  
+        </div>
+    </div>
+</header>
+
+<script src="js/login.js"></script>
+<script>
+    //登录
+    $(".button-sy-hy").click(function(){
+        $("#my_login_main").toggleClass("hidden")
+        $(".login_bg").show();
+    })
+    $(".login-close").click(function(){
+        $("#my_login_main").addClass("hidden")
+        $(".login_bg").hide();
+    })
+    //注册
+    $(".ordinary-login").hide();
+    $("#ordinary").click(function(e){
+        e.preventDefault();
+        
+        $(".ordinary-login").show(); 
+        $(".login-close").click(function(){
+            $(".ordinary-login").hide();
+        })
+        $("#sixth_login1").click(function(e){
+            e.preventDefault();
+            $(".ordinary-login").hide();
+            $("#my_login_main").show();
+        })
+    })
+
+    //导航栏效果设置
+    var $nnav=$("div.nav_li");
+    $nnav.hide();
+    $(".title").click(function(e){
+        e.preventDefault();
+        if($nnav.is(":hidden"))
+            $nnav.show();
+        else $nnav.hide();
+    })
+        .parent().parent().parent().hover(
+        function(){$nnav.show()},
+        function(){$nnav.hide()}
+    )
+</script>
