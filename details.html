@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>贝思客详情页</title>
+    <link rel="stylesheet" href="css/details.css"/>
+    <script src="js/vue.js"></script>
+</head>
+<body>
+<!--头部-->
+<header id="header">
+</header>
+<!--详情页内容-->
+<div class="main">
+    <div class="sitemap">
+        <div class="sitemap_one">伴手礼系列</div>
+        <div class="sitemap_arrow"><img src="img/arrow-right.png"/></div>
+        <div class="sitemap_one">莓酒冰影</div>
+    </div>
+    <div class="de-main">
+        <div class="de-info">
+            <!--左边照片展示-->
+            <div class="info-left">
+                <!--大图-->
+                <div class="left-pic">
+                    <div id="item-ef">
+                        <img class="img1" src="img/莓酒冰影-1.jpg"/>
+                        <img class="img2" src="img/莓酒冰影-2.jpg" style="display: none; opacity: 1;"/>
+                        <img class="img3" src="img/莓酒冰影-3.jpg" style="display: none; opacity: 1;"/>
+                        <img class="img4" src="img/莓酒冰影-4.jpg" style="display: none; opacity: 1;">
+                    </div>
+                    <!--小图-->
+                    <div class="info-left-simg">
+                        <ul>
+                            <li class="img_1"><a href="#"><img src="img/莓酒冰影-1.jpg"/></a></li>
+                            <li class="img_2"><a href="#"><img src="img/莓酒冰影-2.jpg"/></a></li>
+                            <li class="img_3"><a href="#"><img src="img/莓酒冰影-3.jpg"/></a></li>
+                            <li class="img_4"><a href="#"><img src="img/莓酒冰影-4.jpg"/></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--右边文字-->
+            <div class="info-right">
+                <ul>
+                    <li><h2>莓酒冰影</h2></li>
+                    <li><h2>¥ 98.00</h2></li>
+                    <li class="info-right-name"><span>甜度:<img src="img/tian3.png"/></span></li>
+                    <li class="li-select">0.8磅 <img src="img/selected.png"/></li>
+                    <li class="info-right-message">
+                        <div class="message-one">适合2-4人分享</div>
+                        <span class="message-two">至少需提前一天预约</span>
+                    </li>
+                    <li class="info-right-num">
+                        <input class="one" id="btn1" value="-" type="button"></input>
+                        <input class="one" id="btn2" value="1" type="button"></input>
+                        <input class="one" id="btn3" value="+" type="button"></input>
+                    </li>
+                    <li class="info-right-count">
+                        <div class="count-list">
+                            <img src="img/check_box_unfocused.png"/>
+                            <span class="count-list_color">+29.9元</span>
+                            <span>换购吉致泡芙*1</span>
+                            <img class="count-list-img1" src="img/吉致泡芙-2.jpg"/>
+                        </div>
+                        <div class="count-list">
+                            <img src="img/check_box_unfocused.png"/>
+                            <span class="count-list_color">+59.9元</span>
+                            <span>换购吉致牛轧糖</span>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(巴旦木味)2盒*1 </p>
+                            <img class="count-list-img2" src="img/吉致牛轧糖(巴旦木味)2盒-2.jpg"/>
+                        </div>
+                    </li>
+                    <li class="info-right-button">
+                        <div class="info_button">
+                            <span class="button_cart">加入购物车</span>
+                            <span class="button_buy">立即购买</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--商品详情设置-->
+    <div>
+        <div class="detail-tab">
+            <div class="detail-sel">商品详情</div>
+            <span class="detail-eval">商品评价 (60条)</span>
+        </div>
+        <div class="tab-one">
+            <div class="tab-mean">
+                <div class="mean-left">
+                    <div>品牌：伴手礼</div>
+                    <div class="mean-left-one">口味：萌幻慕斯</div>
+                    <div class="mean-left-two">最适宜0℃~8℃冷藏保存，离开冷藏请勿超过2小时。5月1日~10月31日建议2天内食用 11月1日~翌年4月30日建议3天内食用。</div>
+                </div>
+                <div class="mean-right">
+                    <div class="mean-right-one">原材料：草莓果溶、安佳奶油、草莓酒、蔓越梅、红加仑。</div>
+                    <div class="mean-right-two">适合人群：所有人群</div>
+                </div>
+            </div>
+            <div class="tab-video">
+                <video src="img/唐嫣发布会剪辑成品new.mov-new.mp4" controls="controls" autoplay="autoplay"></video>
+                <div class="video-text1">图片仅供参考，请以实物为准</div>
+                <div class="video-text">
+                   <div class="video-text2">这一次，也许不是颜值担当，却要对得起观众；这一次，也许不是舌尖上的冠军，却也傲娇的独一无二。</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--大图-->
+    <div class="lg_img">
+        <img src="img/莓酒冰影1.jpg"/>
+        <img src="img/莓酒冰影2.jpg"/>
+        <img src="img/莓酒冰影3.jpg"/>
+        <img src="img/size.jpg"/>
+    </div>
+    <!--派送范围文字设置-->
+    <div id="my_text">
+        <div class="my_text_adds">北京</div>
+        <div class="my_text_text">六环以内（不包含香山地区）免费配送，其他区域暂不支持配送。</div>
+        <div class="my_text_adds">上海</div>
+        <div class="my_text_text">上海申嘉湖高速以北，绕城高速以南，外环高速以西，沈海高速以东区域及嘉定行政区免费配送，超出区域按30元/个收取运费。</div>
+        <div class="my_text_adds">常州</div>
+        <div class="my_text_text">龙城大道高架以南，龙江路高架以西，青洋路高架以东，长虹路高架以北免费配送，其它区域暂不支持配送。</div>
+        <div class="my_text_adds">苏州</div>
+        <div class="my_text_text">周湖线云龙路以北，G15W常台高速以西，S230太湖苏州湾大桥以东免费配送。苏州绕城之内除阳澄湖地区（G15W以东，G2京沪高速以北）暂不支持配送。昆山区域：陆丰东路中环南线以北，城北路以南，沿沪大道以西，常嘉高速以东免费配送。</div>
+        <div class="my_text_adds">杭州</div>
+        <div class="my_text_text">余杭区,拱墅区,西湖区,上城区,下城区,江干区,滨江区,萧山区(以上区域绕城内免费配送，其他区域暂不支持配送)。</div>
+        <div class="my_text_adds">无锡</div>
+        <div class="my_text_text">S19锡张高速（通锡高速）望虞河以北以西，S228（锡张线）以南，蠡湖大道（环湖路，西环路、锡西大道）以东免费配送，其他区域暂不支持配送。</div>
+        <div class="my_text_adds">成都</div>
+        <div class="my_text_text">珠江路.大马寺路以东，天府五街以北，新下街以西及成都绕城高速内免费配送，其它区域暂不支持配送。</div>
+        <div class="my_text_adds">天津</div>
+        <div class="my_text_text">天津全市免费配送，蓟县区域暂不支持配送（绕城以外实际配送时间会±1小时，请周知。）</div>
+        <div class="my_text_adds">重庆</div>
+        <div class="my_text_text">金州大道以南、嘉陵江渝黔铁路以东、轨道交通三号线内环快 速路以北以西免费配送，其他区域暂不支持配送。</div>
+        <div class="my_text_adds">台州</div>
+        <div class="my_text_text">椒江以北，洪三路以南，内环东路-内环北路-大闸路以西。S19沿海高速以东，免费配送，其余地区暂不支持配送。</div>
+    </div>
+</div>
+<footer id="footer">
+</footer>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/header.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/index.js"></script>
+<script src="js/ajax.js"></script>
+<script src="js/details.js"></script>
+</body>
+</html>
