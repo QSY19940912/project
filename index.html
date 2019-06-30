@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>贝思客首页</title>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/index.css"/>
+	
+</head>
+<body>
+<!--顶部-->
+   <div class="top-banner" style="display: block">
+	   <div class="top-banner1">
+		   <div class="banner1">
+			   <div class="banner1-button" style="display:block">
+				   <img src="img/small-button.png"/>
+			   </div>
+			   <div class="banner2-button" style="display:none">
+				   <img src="img/big-button.png"/>
+			   </div>
+		   </div>
+		   <div class="big-img">
+			   <img src="img/big-banner.jpg"/>
+		   </div>
+		   <div class="small-img" style="display:block">
+			   <img src="img/small-banner.jpg"/>
+		   </div>
+	   </div>
+   </div>
+
+	<header id="header">
+	</header>
+	<!--主体-->
+	<div class="container">
+		<div class="row w-100 ml-1">
+				<!--第一行第一列下拉列表-->
+			<div class="col-md-3 col-sm-12 my_bg pt-4 gt">
+				<p><a href="details.html?lid=1" class="text-white"><img src="img/one-2.png" class="my_small_img"/>蛋糕贝式严选</a></p>
+				<p><a href="details.html?lid=2" class="text-white"><img src="img/one-3.png" class="my_small_img"/>糖果西点</a></p>
+				<p><a href="details.html?lid=3" class="text-white"><img src="img/one-4.png" class="my_small_img"/>乳品系列</a></p>
+				<p><a href="details.html?lid=4" class="text-white"><img src="img/one-5.png" class="my_small_img"/>其他</a></p>
+				<p><a href="details.html?lid=5" class="text-white"><img src="img/one-1.png" class="my_small_img"/>蛋糕匠心原创</a></p>
+				<p class="one_left_line ml-1">&nbsp</p>
+				<p><a href="#" class="text-white"><img src="img/one-8.png" class="my_small_img"/>数字蛋糕</a></p>
+				<p><a href="#" class="text-white"><img src="img/one-9.png" class="my_small_img"/>星座</a></p>
+				<p><a href="#" class="text-white"><img src="img/one-10.png" class="my_small_img"/>月饼</a></p>
+			</div>
+			<div class="col-md-9 p-0">
+				<!--轮播广告图-->
+				<div id="mycar" class="carousel" data-ride="carousel">
+					<ul class="carousel-indicators justify-content-end">
+						<li data-slide-to="0" data-target="#mycar" class="active"></li>
+						<li data-slide-to="1" data-target="#mycar"></li>
+						<li data-slide-to="2" data-target="#mycar"></li>
+						<li data-slide-to="3" data-target="#mycar"></li>
+						<li data-slide-to="4" data-target="#mycar"></li>
+						<li data-slide-to="5" data-target="#mycar"></li>
+					</ul>
+					<!--图片-->
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<a href="#"><img src="img/pc-banner-0yuan.jpg" class="my_big_img"/></a>
+						</div>
+						<div class="carousel-item">
+							<a href="#"><img src="img/pc-banner.jpg" class="my_big_img"/></a>
+						</div>
+						<div class="carousel-item">
+							<a href="#"><img src="img/pc-banner-mjby.jpg" class="my_big_img"/></a>
+						</div>
+						<div class="carousel-item">
+							<a href="#"><img src="img/400.jpg" class="my_big_img"/></a>
+						</div>
+						<div class="carousel-item">
+							<a href="#"><img src="img/100.jpg" class="my_big_img"/></a>
+						</div>
+						<div class="carousel-item">
+							<a href="#"><img src="img/197552065441077630.jpg" class="my_big_img"/></a>
+						</div>
+					</div>
+					<!--左右箭头-->
+					<a href="#mycar" class="carousel-control-prev" data-slide="prev">
+						<span class="carousel-control-prev-icon"></span>
+					</a>
+					<a href="#mycar" class="carousel-control-next" data-slide="next">
+						<span class="carousel-control-next-icon"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="row mt-3 p-0 w-100 ml-1">
+			<a href="#"><img src="img/r0.png" class="my_center_img1"/></a>
+			<a href="details.html?lid=1"><img src="img/gou.jpg" class="my_center_img ml-2"/></a>
+			<a href="details.html?lid=2"><img src="img/xz.jpg" class="my_center_img ml-2"/></a>
+			<a href="details.html?lid=3"><img src="img/r2.png" class="my_center_img ml-2"/></a>
+		</div>
+		<div class="d-flex mt-4 w-100">
+			<img src="img/index-three-title.png" class="h-25"/>
+			<h4 class="index-three-title">限时抢购</h4>
+		</div>
+		<div class="w-100">
+			<ul class="list-unstyled d-flex justify-content-around">
+				<li class="index-three-cake-tab">
+					<a href="details.html?lid=1">
+					<img class="new_img" src="img/吉致生巧.png"/></a>
+					<p class="text-center">吉致生巧 1.2磅</p>
+					<p class="text-danger text-center mr-5">￥88.00</p>
+					<p class="p_old">￥118.00</p>
+				   
+				</li>
+				<li class="index-three-cake-tab">
+					<a href="details.html?lid=2">
+					<img class="new_img" src="img/金装云顶曲奇.png"/></a>
+					<p class="text-center">金装云顶曲奇 1.2磅</p>
+					<p class="text-danger text-center mr-5">￥58.00</p>
+					<p class="p_old">￥108.00</p>
+				</li>
+				<li class="index-three-cake-tab">
+					<a href="details.html?lid=3">
+					<img class="new_img" src="img/茶色生香.png"/></a>
+					<p class="text-center">茶色生香 1.2磅</p>
+					<p class="text-danger text-center mr-5">￥118.00</p>
+					<p class="p_old">￥198.00</p>
+				</li>	
+				<li class="index-three-cake-tab">
+					<a href="details.html?lid=4">
+					<img class="new_img" src="img/new-indexsale沃尔夫斯堡之春.png"/></a>
+					<p class="text-center">沃尔夫斯堡之春 1.2磅</p>
+					<p class="text-danger text-center mr-5">￥118.00</p>
+					<p class="p_old">￥198.00</p>
+				</li>				       
+			</ul>
+		</div>
+	</div>
+	<!--第二部分主体-->
+	<div class="my_bg2">
+		<div class="my_main">
+			<div class="mt-4">
+				<div class="w-100">
+					<a href="#"><img src="img/pc1.png" class="my_main_img"/></a>
+				</div>
+			</div>
+				<!--匠心·原创部分-->
+			    <div class="main-index-five">
+					<div class="mt-3">
+						<h4 class="index-three-title ml-0">匠心·原创</h4>
+					</div>
+					<div class="d-flex">
+						<div>
+							<a href="#"><img src="img/index-five-1.png" class="index-five-img"/></a>
+						</div>
+						<div class="index-five-list-r">
+							<div class="index-five-tab">
+								<a href="details.html?lid=4"><img src="img/new-index-p极地牛乳.png" class="new_index_img"/></a>
+								<div class="index-five-tab-name">
+									<p class="index_five_font1">极地牛乳</p>
+									<span class="index_five_font2">￥</span>
+									<span class="index_five_font3">198.00</span>
+									<p class="index_five_font4">销量 547564</p>
+									<a href="#" class="index-five-tab-car">
+										<img src="img/index-five-tab-car.png" class="index-five-tab-car-img"/>
+									</a>
+								</div>
+							</div>
+							<div class="index-five-tab">
+								<a href="details.html?lid=5"><img src="img/new-index-p情定爱情海.png" class="new_index_img"/></a>
+								<div class="index-five-tab-name">
+									<p class="index_five_font1">情定爱情海</p>
+									<span class="index_five_font2">￥</span>
+									<span class="index_five_font3">198.00</span>
+									<p class="index_five_font4">销量 547564</p>
+									<a href="#" class="index-five-tab-car">
+										<img src="img/index-five-tab-car.png" class="index-five-tab-car-img"/>
+									</a>
+								</div>
+							</div>
+							<div class="index-five-tab">
+								<a href="details.html?lid=6"><img src="img/new-index-p白色红丝绒.png" class="new_index_img"/></a>
+								<div class="index-five-tab-name">
+									<p class="index_five_font1">白色红丝绒</p>
+									<span class="index_five_font2">￥</span>
+									<span class="index_five_font3">198.00</span>
+									<p class="index_five_font4">销量 547564</p>
+									<a href="#" class="index-five-tab-car">
+										<img src="img/index-five-tab-car.png" class="index-five-tab-car-img"/>
+									</a>
+								</div>
+							</div>
+							<div class="index-five-tab">
+								<a href="#"><img src="img/new-index-p奥利奥雪域牛乳芝士.png" class="new_index_img"/></a>
+								<div class="index-five-tab-name">
+									<p class="index_five_font1">奥利奥雪域牛乳芝士</p>
+									<span class="index_five_font2">￥</span>
+									<span class="index_five_font3">198.00</span>
+									<p class="index_five_font4">销量 547564</p>
+									<a href="#" class="index-five-tab-car">
+										<img src="img/index-five-tab-car.png" class="index-five-tab-car-img"/>
+									</a>
+								</div>
+							</div>
+							<div class="index-five-tab">
+								<a href="#"><img src="img/new-index-p草莓拿破仑.png" class="new_index_img"/></a>
+								<div class="index-five-tab-name">
+									<p class="index_five_font1">草莓拿破仑</p>
+									<span class="index_five_font2">￥</span>
+									<span class="index_five_font3">198.00</span>
+									<p class="index_five_font4">销量 547564</p>
+									<a href="#" class="index-five-tab-car">
+										<img src="img/index-five-tab-car.png" class="index-five-tab-car-img"/>
+									</a>
+								</div>
+							</div>
+							<div class="index-five-tab">
+								<a href="#"><img src="img/new-index-p莱茵河莓妖精.png" class="new_index_img"/></a>
+								<div class="index-five-tab-name">
+									<p class="index_five_font1">莱茵河莓妖精</p>
+									<span class="index_five_font2">￥</span>
+									<span class="index_five_font3">198.00</span>
+									<p class="index_five_font4">销量 547564</p>
+									<a href="#" class="index-five-tab-car">
+										<img src="img/index-five-tab-car.png" class="index-five-tab-car-img"/>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			    <a href="#"><img src="img/pc2.png" class="my_main_img"/></a>
+			<!--贝式·严选部分-->
+			<div class="mt-3">
+				<h4 class="index-three-title ml-0">贝式·严选</h4>
+			</div>
+			<!--第一行图片-->
+			<div class="row main_w">
+				<div class="col-md-3 col-sm-3">
+					<img src="img/seven_left_one.png" class="seven_left_one_img">
+				</div>
+				<div class="col-md-3 col-sm-3">
+					<div class="index-five-tab-name">
+					   <img src="img/new-index-p旧时光.png" class="new_index_img">
+					   <p class="index_five_font1">旧时光</p>
+					   <span class="index_five_font2">￥</span>
+					   <span class="index_five_font3">198.00</span>
+					   <p class="index_five_font4">销量 26524</p>
+					   <a href="#" class="index-five-tab-car">
+						   <img src="img/index-five-tab-car.png" class="index-five-tab-car-img"/>
+					   </a>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-3">
+					<div class="index-five-tab-name">
+						<img src="img/new-index-p双果小确幸.png" class="new_index_img">
+						<p class="index_five_font1">双果小确幸</p>
+						<span class="index_five_font2">￥</span>
+						<span class="index_five_font3">288.00</span>
+						<p class="index_five_font4">销量 11549</p>
+						<a href="#" class="index-five-tab-car">
+							<img src="img/index-five-tab-car.png" class="index-five-tab-car-img"/>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-3">
+					<div class="index-five-tab-name">
+						<img src="img/new-index-p露水茶颜.png" class="new_index_img"/>
+						<p class="index_five_font1">露水茶颜</p>
+						<span class="index_five_font2">￥</span>
+						<span class="index_five_font3">218.00</span>
+						<p class="index_five_font4">销量 7981</p>
+						<a href="#" class="index-five-tab-car">
+							<img src="img/index-five-tab-car.png" class="index-five-tab-car-img"/>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!--第二行图片-->
+			<div class="row main_w">
+				<div class="col-md-3 col-sm-3">
+					<img src="img/seven_left_tow.png" class="seven_left_one_img"/>
+				</div>
+				<div class="col-md-3 col-sm-3">
+					<div class="index-five-tab-name">
+						<img src="img/new-index-p红莓森林.png" class="new_index_img"/>
+						<p class="index_five_font1">红莓森林</p>
+						<span class="index_five_font2">￥</span>
+						<span class="index_five_font3">218.00</span>
+						<p class="index_five_font4">销量 35461</p>
+						<a href="#" class="index-five-tab-car">
+							<img src="img/index-five-tab-car.png" class="index-five-tab-car-img"/>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-3">
+					<div class="index-five-tab-name">
+						<img src="img/new-index-p歌剧魅影.png" class="new_index_img"/>
+						<p class="index_five_font1">歌剧魅影</p>
+						<span class="index_five_font2">￥</span>
+						<span class="index_five_font3">218.00</span>
+						<p class="index_five_font4">销量 547564</p>
+						<a href="#" class="index-five-tab-car">
+							<img src="img/index-five-tab-car.png" class="index-five-tab-car-img"/>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-3">
+					<div class="index-five-tab-name">
+						<img src="img/new-index-p酸奶芝士.png" class="new_index_img"/>
+						<p class="index_five_font1">酸奶芝士</p>
+						<span class="index_five_font2">￥</span>
+						<span class="index_five_font3">218.00</span>
+						<p class="index_five_font4">销量 6908</p>
+						<a href="#" class="index-five-tab-car">
+							<img src="img/index-five-tab-car.png" class="index-five-tab-car-img"/>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div>
+				<a href="#"><img src="img/pc3.png" class="my_main_img"/></a>
+			</div>
+			<!--网红爆款部分-->
+			<div class="mt-3">
+				<h4 class="index-three-title ml-0">网红爆款</h4>
+			</div>
+			<!--网红爆款下的图片-->
+			<div class="row main_w">
+				<div class="col-md-3 col-sm-3">
+					<div class="index-five-tab-name">
+						<img src="img/布朗尼精灵.png" class="new_index_img"/>
+						<p class="index_five_font1">布朗尼精灵</p>
+						<span class="index_five_font2">￥</span>
+						<span class="index_five_font3">198.00</span>
+						<p class="index_five_font4">销量 1089</p>
+						<a href="#" class="index-five-tab-car">
+							<img src="img/index-five-tab-car.png" class="index-five-tab-car-img"/>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-3">
+					<div class="index-five-tab-name">
+						<img src="img/PAPI熊蛋糕.png"class="new_index_img"/>
+						<p class="index_five_font1">PAPI熊蛋糕</p>
+						<span class="index_five_font2">￥</span>
+						<span class="index_five_font3">198.00</span>
+						<p class="index_five_font4">销量 18653</p>
+						<a href="#" class="index-five-tab-car">
+							<img src="img/index-five-tab-car.png" class="index-five-tab-car-img"/>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-3">
+					<div class="index-five-tab-name">
+						<img src="img/金色榴莲.png"class="new_index_img"/>
+						<p class="index_five_font1">金色榴莲</p>
+						<span class="index_five_font2">￥</span>
+						<span class="index_five_font3">198.00</span>
+						<p class="index_five_font4">销量 1009</p>
+						<a href="#" class="index-five-tab-car">
+							<img src="img/index-five-tab-car.png" class="index-five-tab-car-img"/>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-3">
+					<div class="index-five-tab-name">
+						<img src="img/茶色生香.png"class="new_index_img"/>
+						<p class="index_five_font1">茶色生香</p>
+						<span class="index_five_font2">￥</span>
+						<span class="index_five_font3">198.00</span>
+						<p class="index_five_font4">销量 263</p>
+						<a href="#" class="index-five-tab-car">
+							<img src="img/index-five-tab-car.png" class="index-five-tab-car-img"/>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!--猜您喜欢-->
+			<div class="mt-3">
+				<h4 class="index-three-title ml-0">猜您喜欢</h4>
+			</div>
+			<!--猜您喜欢的图片-->
+			<div class="row main_w">
+				<div class="col-md-3 col-sm-3">
+					<div class="index-five-tab-name">
+						<img src="img/new-index-p情定爱情海.png" class="new_index_img"/>
+						<p class="index_five_font1">情定爱情海</p>
+						<span class="index_five_font2">￥</span>
+						<span class="index_five_font3">198.00</span>
+						<p class="index_five_font4">销量 413412</p>
+						<a href="#" class="index-five-tab-car">
+							<img src="img/index-five-tab-car.png" class="index-five-tab-car-img"/>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-3">
+					<div class="index-five-tab-name">
+						<img src="img/new-index-p新狮子王.png"class="new_index_img"/>
+						<p class="index_five_font1">PAPI熊蛋糕</p>
+						<span class="index_five_font2">￥</span>
+						<span class="index_five_font3">198.00</span>
+						<p class="index_five_font4">销量 18653</p>
+						<a href="#" class="index-five-tab-car">
+							<img src="img/index-five-tab-car.png" class="index-five-tab-car-img"/>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-3">
+					<div class="index-five-tab-name">
+						<img src="img/松露巧克力.png"class="new_index_img"/>
+						<p class="index_five_font1">松露巧克力</p>
+						<span class="index_five_font2">￥</span>
+						<span class="index_five_font3">198.00</span>
+						<p class="index_five_font4">销量 89732</p>
+						<a href="#" class="index-five-tab-car">
+							<img src="img/index-five-tab-car.png" class="index-five-tab-car-img"/>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-3">
+					<div class="index-five-tab-name">
+						<img src="img/落莓恋曲.png"class="new_index_img"/>
+						<p class="index_five_font1">落莓恋曲</p>
+						<span class="index_five_font2">￥</span>
+						<span class="index_five_font3">198.00</span>
+						<p class="index_five_font4">销量 6459</p>
+						<a href="#" class="index-five-tab-car">
+							<img src="img/index-five-tab-car.png" class="index-five-tab-car-img" id="im"/>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<footer id="footer">
+</footer>
+    <script src="js/jquery-1.11.3.js"></script>
+	<script src="js/header.js"></script>
+	<script src="js/footer.js"></script>
+	<script src="js/ajax.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>
